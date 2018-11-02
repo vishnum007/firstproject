@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'authapp/base.html'%}
+
+{%block child_block%}
+<h1>Welcome to inline Exam Portal</h1>
+<form method="post">
+  {{form.as_p}}
+  {%csrf_token%}
+  <input type="submit" name="" value="Sign Up">
+</form>
+
+{%endblock%}
